@@ -10,6 +10,10 @@ npm i -D @cloud-cli/typescript-config
 
 ```json
 {
-  "extends": "@cloud-cli/typescript-config"
+  "extends": "@cloud-cli/typescript-config",
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "include": ["./src/**/*.ts"]
 }
 ```
